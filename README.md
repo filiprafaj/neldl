@@ -1,9 +1,9 @@
 # "Named Entity Linking by Deep Learning" source code
 
 The thesis can be found [here](https://drive.google.com/file/d/1dic_9HvdhlYbFwDJS0Z3OJbLuJGGBod-/view?usp=sharing).
-- setup Python environment (optional) and install requirements
-```
+- clone the repository, setup Python environment (optional) and install the required libraries
 git clone https://github.com/filiprafaj/neldl.git
+
 cd neldl
 python3 -m pip install virtualenv
 python3 -m virtualenv neldl_env

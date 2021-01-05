@@ -13,7 +13,7 @@ source neldl_env/bin/activate
 
 pip install -r requirements.txt
 ```
-- Download our `data` folder [here]() and place the it under ``neldl/'' (under `data/experiments` there are some of our experiments).
+- Download our `data` folder [here]() and place the it under `neldl/` (under `data/experiments` there are some of our experiments).
 ---
 ## Reproduce our results
 

@@ -4,18 +4,36 @@ The thesis can be found [here](https://drive.google.com/file/d/1dic_9HvdhlYbFwDJ
 
 ## Reproduce our results
 - requirements?
-- Download our `data` folder here (under `data/experiments` are some of our experiments).
-- Use one of our experiments (e.g. `base`) and run your training:
+- Download our `data` folder here (under `data/experiments` there are some of our experiments).
+- Choose one of our experiments (e.g. `base_cased`). If you choose other than `base_cased`, you have to copy contents of `base_cased/embeddings` to the `embeddings` folder of the chosen experiment.
+
+---
+**1. BERT embeddings of datasets**
+
+Generate BERT embeddings of the datasets (all *\*.txt* files in `data/base_data/new_datasets`). Choose settings BERT size and casing correspondinly to the chosen experiment (e.g. base, cased)
 ```
-python -m model.train --experiment_name=base --training_name=your_training
+python -m preprocessing.create_new_datasets_embeddings --bert_size=base --bert_casing=cased 
 ```
-- You can experiment with hyperparameters
+---
+**2. Create TFRecords**
+
+For the chosen experiment (e.g. `base_cased`) create a dataset in TFRecords format for each *\*.txt* file in `data/base_data/new_datasets`(it will also contain the BERT embeddings).
+```
+python -m preprocessing.create_tfrecords --experiment_name bert_cased --bert_size=base --bert_casing=cased 
+```
+---
+**3. Train**
+
+Choose training settings. For example you can set `no_attention` model using `--local_score_components=pem_similarity`. Other used scripts can be found [here]()
+```
+python -m model.train --experiment_name=base_cased --training_name=no_attention_reproduce --local_score_components=pem_similarity
+```
 
 ## Train your model from scratch
 
 To train from scratch you only need the `base_data` folder from the download. Put it under `data` folder.
 
-**1. Create entity universe**
+**I. Create entity universe**
 
 This will collect candidate entities for all spans in *\*.txt* files in `data/base_data/new_datasets`. Also count words and character frequencies.
 ```
@@ -26,7 +44,7 @@ Alternatively you can collect all entities from the probabilistic map *p(e|m)* (
 python -m preprocessing.create_entity_universe_all_entities --experiment_name your_experiment_all_entities
 ```
 ---
-**2. Train entity embeddings**
+**II. Train entity embeddings**
 
 For training entity embeddings, use the [deep-ed-neldl](https://github.com/filiprafaj/deep-ed-neldl) project.
 - follow the instructions in the README.md of the [project](https://github.com/filiprafaj/deep-ed-neldl)
@@ -43,22 +61,24 @@ th preprocessing/bridge_code_lua/ent_vecs_to_txt.lua -ent_vecs_folder ../data/ex
 python -m preprocessing.bridge_code_lua.ent_vecs_from_txt_to_npy --experiment_name your_experiment
 ```
 ---
-**3. BERT embeddings of datasets**
+**III. BERT embeddings of datasets**
 
 Generate BERT embeddings of the datasets (all *\*.txt* files in `data/base_data/new_datasets`)
 ```
 python -m preprocessing.create_new_datasets_embeddings
 ```
 ---
-**4. Create TFRecords**
+**IV. Create TFRecords**
 
 Create a dataset in TFRecords format for each *\*.txt* file in `data/base_data/new_datasets`(it will also contain the BERT embeddings).
 ```
 python -m preprocessing.create_tfrecords --experiment_name your_experiment
 ```
 ---
-**5. Train**
+**V. Train**
 
 ```
 python -m model.train --experiment_name=base --training_name=your_training
 ```
+
+## Try models on arbitrary input text

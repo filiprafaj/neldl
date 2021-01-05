@@ -1,10 +1,11 @@
 # "Named Entity Linking by Deep Learning" source code
 
 The thesis can be found [here](https://drive.google.com/file/d/1dic_9HvdhlYbFwDJS0Z3OJbLuJGGBod-/view?usp=sharing).
-
-## Reproduce our results
 - requirements?
 - Download our `data` folder here (under `data/experiments` there are some of our experiments).
+
+## Reproduce our results
+
 - Choose one of our experiments (e.g. `base_cased`). If you choose other than `base_cased`, you have to copy contents of `base_cased/embeddings` to the `embeddings` folder of the chosen experiment.
 
 ---

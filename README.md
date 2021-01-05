@@ -2,6 +2,7 @@
 
 The thesis can be found [here](https://drive.google.com/file/d/1dic_9HvdhlYbFwDJS0Z3OJbLuJGGBod-/view?usp=sharing).
 - clone the repository, setup Python environment (optional) and install the required libraries
+```
 git clone https://github.com/filiprafaj/neldl.git
 
 cd neldl

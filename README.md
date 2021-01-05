@@ -1,1 +1,64 @@
-# neldl
+# "Named Entity Linking by Deep Learning" source code
+
+The thesis can be found [here](https://drive.google.com/file/d/1dic_9HvdhlYbFwDJS0Z3OJbLuJGGBod-/view?usp=sharing).
+
+## Reproduce our results
+- requirements?
+- Download our `data` folder here (under `data/experiments` are some of our experiments).
+- Use one of our experiments (e.g. `base`) and run your training:
+```
+python -m model.train --experiment_name=base --training_name=your_training
+```
+- You can experiment with hyperparameters
+
+## Train your model from scratch
+
+To train from scratch you only need the `base_data` folder from the download. Put it under `data` folder.
+
+**1. Create entity universe**
+
+This will collect candidate entities for all spans in *\*.txt* files in `data/base_data/new_datasets`. Also count words and character frequencies.
+```
+python -m preprocessing.create_entity_universe --experiment_name your_experiment
+```
+Alternatively you can collect all entities from the probabilistic map *p(e|m)* (`data/base_data/prob_yago_crosswikis_wikipedia_p_e_m.txt`)
+```
+python -m preprocessing.create_entity_universe_all_entities --experiment_name your_experiment_all_entities
+```
+---
+**2. Train entity embeddings**
+
+For training entity embeddings, use the [deep-ed-neldl](https://github.com/filiprafaj/deep-ed-neldl) project.
+- follow the instructions in the README.md of the [project](https://github.com/filiprafaj/deep-ed-neldl)
+  - you will need `data/experiments/your_experiment/entity_universe.txt`
+- create folder `data/experiments/your_experiment/embeddings`
+- copy *ent_vecs__ep_XX.t7* to `data/experiments/your_experiment/embeddings`
+- copy generated files *wikiid2nnid.txt* and *nnid2wikiid.txt* from the root of $DATA_PATH to `data/experiments/your_experiment`
+- use this command to extract embeddings from *ent_vecs__ep_XX.t7* to *entity_embeddings.txt*:
+```
+th preprocessing/bridge_code_lua/ent_vecs_to_txt.lua -ent_vecs_folder ../data/experiments/your_experiment/embeddings -ent_vecs_file ent_vecs__ep_XX.t7
+```
+- and the following one to create *entity_embeddings.npy* from *entity_embeddings.txt*
+```
+python -m preprocessing.bridge_code_lua.ent_vecs_from_txt_to_npy --experiment_name your_experiment
+```
+---
+**3. BERT embeddings of datasets**
+
+Generate BERT embeddings of the datasets (all *\*.txt* files in `data/base_data/new_datasets`)
+```
+python -m preprocessing.create_new_datasets_embeddings
+```
+---
+**4. Create TFRecords**
+
+Create a dataset in TFRecords format for each *\*.txt* file in `data/base_data/new_datasets`(it will also contain the BERT embeddings).
+```
+python -m preprocessing.create_tfrecords --experiment_name your_experiment
+```
+---
+**5. Train**
+
+```
+python -m model.train --experiment_name=base --training_name=your_training
+```

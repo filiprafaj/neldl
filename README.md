@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ---
 ## Reproduce our results
 
-- Choose one of our experiments (e.g. `base_cased`). If you choose other than `base_cased`, you have to copy contents of `base_cased/embeddings` to the `embeddings` folder of the chosen experiment.
+- Choose one of our experiments (e.g. `base_cased`). If you choose other than `base_cased` or `all_embeddings_base`, you have to copy contents of `base_cased/embeddings` to the `embeddings` folder of the chosen experiment.
 
 **1. BERT embeddings of datasets**
 

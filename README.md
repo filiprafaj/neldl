@@ -36,7 +36,7 @@ python -m preprocessing.create_tfrecords --experiment_name bert_cased --bert_siz
 
 **3. Train**
 
-Choose training settings. For example you can set `no_attention` model using `--local_score_components=pem_similarity`. Our training scripts can be found [here]()
+Choose training settings. For example you can set `no_attention` model using `--local_score_components=pem_similarity`. Our training scripts can be found [here](https://github.com/filiprafaj/neldl/tree/main/code/scripts)
 ```
 python -m model.train --experiment_name=base_cased --training_name=no_attention_reproduce --local_score_components=pem_similarity
 ```

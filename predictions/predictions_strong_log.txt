@@ -1,0 +1,27 @@
+Checkpoint ../data/experiments/base_cased/training_folder/no_attention/checkpoints/model-54 loaded.
+
+Evaluating datasets - strong matching mode 
+aida_train
+micro P: 99.4 	R: 97.9 	F1: 98.6
+macro P: 99.3 	R: 98.4 	F1: 98.9
+aida_dev
+micro P: 90.5 	R: 90.5 	F1: 90.5
+macro P: 89.0 	R: 88.9 	F1: 89.0
+aida_test
+micro P: 85.3 	R: 82.6 	F1: 83.9
+macro P: 85.3 	R: 83.9 	F1: 84.6
+ace2004
+micro P: 19.3 	R: 71.0 	F1: 30.3
+macro P: 23.2 	R: 67.4 	F1: 34.5
+aquaint
+micro P: 34.2 	R: 38.7 	F1: 36.3
+macro P: 37.3 	R: 38.1 	F1: 37.7
+clueweb
+micro P: 42.2 	R: 46.6 	F1: 44.3
+macro P: 51.9 	R: 46.7 	F1: 49.2
+msnbc
+micro P: 77.6 	R: 72.2 	F1: 74.8
+macro P: 79.3 	R: 68.3 	F1: 73.4
+wikipedia
+micro P: 40.0 	R: 39.9 	F1: 39.9
+macro P: 43.3 	R: 40.4 	F1: 41.8

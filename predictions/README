@@ -1,0 +1,16 @@
+PREDICTIONS of our model (BERT_base, cased)
+ -brackets (blue/violet) denotes (correct/wrong) spans labeled by our model
+ -gold spans marked using green/red text color (green if labeled correctly, red if not)
+-------------------------------------------------
+CREATED USING:
+evaluation.evaluate --experiment_name base_cased --training_name no_attention --checkpoint_model_num 54
+evaluation.evaluate --experiment_name base_cased --training_name no_attention --checkpoint_model_num 54 --weak_matching
+-------------------------------------------------
+THEN copied to originals folder and casted to html and pdf using:
+
+for path in ./originals/*; do
+    name="${path##*/}"
+    aha --word-wrap < $path > "$name.html"
+    pandoc --pdf-engine=xelatex $name.html -t latex -o $name.pdf
+done
+

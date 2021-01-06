@@ -98,6 +98,18 @@ Choose an *experiment*, corresponding *training* and its *checkpoint* to serve. 
 ```
 python -m server.server --experiment_name="all_embeddings_base" --training_name="no_attention" --checkpoint_model_num="15"
 ```
+The server runs on `http://localhost:5555` and expects a json object in a format following format (provide spans for NED or leave spans empty for NEL).
+```
+{ "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": [{"start":0,"length":5}, {"start":49,"length":6}]  }
+{ "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": []  }
+```
+You can use this [jupyter notebook]() to post queries or simply run a Python console in another terminal:
+```
+import requests, json
+myjson = { "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": []  }
+requests.post("http://localhost:5555", json=myjson)
+```
+
 ---
 ## References
 <a id="1">[1]</a> 

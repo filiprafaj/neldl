@@ -40,6 +40,18 @@ Choose training settings. For example you can set `no_attention` model using `--
 ```
 python -m model.train --experiment_name=base_cased --training_name=no_attention_reproduce --local_score_components=pem_similarity
 ```
+
+**4. Evaluate**
+
+To summarize all results you can use:
+```
+python -m evaluation.summarize_all_experiments --order_by_test_set
+```
+To evaluate and to print predictions similar to those [here]() you can use a command analogous to:
+```
+python -m evaluation.evaluate --experiment_name base_cased --training_name no_attention --checkpoint_model_num 54
+```
+
 ---
 ## Train your model from scratch
 

@@ -103,12 +103,13 @@ The server runs on `http://localhost:5555` and expects a json object in a format
 { "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": [{"start":0,"length":5}, {"start":49,"length":6}]  }
 { "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": []  }
 ```
-You can use this [jupyter notebook]() to post queries or simply run a Python console in another terminal:
+To post queries you can use this [Jupyter Notebook](), which offers a convenient way of displaying servers response. You can also run a Python console in another terminal and post query from there:
 ```
 import requests, json
 myjson = { "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": []  }
 requests.post("http://localhost:5555", json=myjson)
 ```
+The server return linked spans with corresponding Wikipedia titles (just prepend 'https://en.wikipedia.org/wiki/')
 
 ---
 ## References

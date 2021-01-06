@@ -103,7 +103,7 @@ The server runs on `http://localhost:5555` and expects a json object in a format
 { "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": [{"start":0,"length":5}, {"start":49,"length":6}]  }
 { "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": []  }
 ```
-To post queries you can use this [Jupyter Notebook](), which offers a convenient way of displaying servers response. You can also run a Python console in another terminal and post query from there:
+To post queries you can use this [Jupyter Notebook](), which offers a convenient way of displaying servers response. Of course, you can instead simply run a Python console in another terminal and post queries from there:
 ```
 import requests, json
 myjson = { "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": []  }

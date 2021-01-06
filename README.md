@@ -93,3 +93,8 @@ python -m model.train --experiment_name=base --training_name=your_training
 ```
 ---
 ## Try models on arbitrary input text
+
+---
+## References
+<a id="1">[1]</a> 
+Kolitsas, Nikolaos & Ganea, Octavian & Hofmann, Thomas. (2018). End-to-End Neural Entity Linking. 519-529. 10.18653/v1/K18-1050. 

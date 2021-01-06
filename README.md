@@ -94,7 +94,10 @@ python -m model.train --experiment_name=base --training_name=your_training
 ```
 ---
 ## Try models on arbitrary input text
-
+Choose an *experiment*, corresponding *training* and its *checkpoint* to serve. `all_embeddings_base` experiment contains embeddings of all available entities, unlike embeddings in `base_cased`, which are limited only to candidate entities found for the datasets.
+```
+python -m server.server --experiment_name="all_embeddings_base" --training_name="no_attention" --checkpoint_model_num="15"
+```
 ---
 ## References
 <a id="1">[1]</a> 

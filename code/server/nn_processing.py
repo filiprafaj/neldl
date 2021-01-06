@@ -1,13 +1,14 @@
-from time import sleep
-import tensorflow as tf
 import pickle
-import numpy as np
-from nltk.tokenize import word_tokenize, sent_tokenize
+from time import sleep
 
 import model.config as config
-from model.model import Model
-from evaluation.metrics import _filtered_spans_and_gm_gt_list
+import numpy as np
 import preprocessing.util as util
+import tensorflow as tf
+from evaluation.metrics import _filtered_spans_and_gm_gt_list
+from model.model import Model
+from nltk.tokenize import sent_tokenize, word_tokenize
+
 
 class StreamingSamples(object):
     def __init__(self):
@@ -315,7 +316,6 @@ class NNProcessing(object):
                     used_entities.add(nnid)
         else:
             for span in filtered_spans:
-                print(span)#DEBUG
                 score, begin_idx, end_idx, nnid = span
                 if score >= self.thr:
                     self._add_response_span(response, span, words2charidx, experiment_name)

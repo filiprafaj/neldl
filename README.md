@@ -24,6 +24,7 @@ pip install -r requirements.txt
 
 Generate BERT embeddings of the datasets (all *\*.txt* files in `data/base_data/new_datasets`). Choose BERT size and casing correspondinly to the chosen experiment (e.g. base, cased).
 ```
+cd code
 python -m preprocessing.create_new_datasets_embeddings --bert_size=base --bert_casing=cased 
 ```
 

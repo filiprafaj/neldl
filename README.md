@@ -8,8 +8,8 @@ The code is based on https://github.com/dalab/end2end_neural_el/. [[1]](1)
 git clone https://github.com/filiprafaj/neldl.git
 
 cd neldl
-python3 -m pip install virtualenv
-python3 -m virtualenv neldl_env
+python3.6 -m pip install virtualenv
+python3.6 -m virtualenv neldl_env
 source neldl_env/bin/activate
 
 pip install -r requirements.txt

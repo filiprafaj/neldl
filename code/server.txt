@@ -1,0 +1,186 @@
+
+ b''
+
+ b'{"text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": [{"start": 0, "length": 5}, {"start": 49, "length": 6}], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(0, 5, 'Barack_Obama'), (49, 6, 'Angela_Merkel')]
+
+ b'{"text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": [], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(17, 7, 'Germany'), (49, 6, 'Angela_Merkel'), (0, 5, 'Barack_Obama')]
+
+ b'{"text": "Pakistan has one of the best teams in cricket. The pakistani squad for ICC Cricket World Cup has Shahid Afridi and Shoaib Akhtar.", "spans": [], "redirections": true, "threshold": -0.1}'
+
+NNProcessing process:
+Processed 1/2 sentences.
+Processed 2/2 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(97, 13, 'Shahid_Afridi'), (71, 21, 'Cricket_World_Cup'), (122, 6, 'Akhtar'), (24, 10, 'Universal_Audio'), (0, 8, 'Pakistan_national_cricket_team')]
+
+ b'{"text": "They performed Kashmir, written by Plant and Page. Page played unusual chords on his Gibson.", "spans": [], "redirections": true, "threshold": -0.1}'
+
+NNProcessing process:
+Processed 1/2 sentences.
+Processed 2/2 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(35, 14, 'Page_and_Plant'), (15, 7, 'Kashmir')]
+
+ b'{"text": "Kashmir is a song by the English rock band Led Zeppelin. Included on their sixth album Physical Graffiti (1975), it was written by Jimmy Page and Robert Plant (with contributions from John Bonham) over a period of three years with lyrics dating to 1973.", "spans": [], "redirections": true, "threshold": -0.1}'
+
+NNProcessing process:
+Processed 1/2 sentences.
+Processed 2/2 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(25, 7, 'England'), (131, 10, 'Jimmy_Page'), (146, 12, 'Robert_Plant'), (43, 12, 'Led_Zeppelin'), (184, 11, 'John_Bonham'), (87, 17, 'Physical_Graffiti'), (0, 7, 'Kashmir')]
+
+ b'{"text": "Federer\\u2019s coach", "spans": [], "redirections": true, "threshold": -0.1}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(0, 7, 'Roger_Federer')]
+
+ b'{"text": "Obama Castle was built in 1601 in Japan.", "spans": [], "redirections": true, "threshold": -0.1}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(34, 5, 'Japan')]
+
+ b'{"text": "The New York Times is a popular newspaper.", "spans": [], "redirections": true, "threshold": -0.1}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(0, 18, 'The_New_York_Times')]
+
+ b'{"text": "KIEV: Separatist rebels have not fulfilled conditions like handingback border posts or laying down their weapons, Ukraine\\u2019s presidentsaid on Monday in a phone call with the leaders of Russia, Germany and France as he pondered whether to extend a ceasefire.The call between President Petro Poroshenko, Russia\\u2019s Vladimir Putin, Germany\\u2019s Chancellor Angela Merkel and France\\u2019s Francois Hollande took place as an expiration deadline neared for Ukraine\\u2019s shaky, unilateral ceasefire.", "spans": [], "redirections": true, "threshold": -0.1}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(301, 6, 'Russia'), (184, 6, 'Russia'), (326, 7, 'Germany'), (365, 6, 'France'), (192, 7, 'Germany'), (204, 6, 'France'), (114, 7, 'Ukraine'), (440, 7, 'Ukraine'), (0, 4, 'Kiev'), (347, 13, 'Angela_Merkel'), (310, 14, 'Vladimir_Putin'), (383, 8, 'François_Hollande'), (289, 10, 'Petro_Poroshenko'), (6, 10, 'Separatism')]
+
+ b'{"text": "Monty Python\'s Flying Circus is a British surreal sketch comedy series created by and starring the comedy group Monty Python, consisting of Graham Chapman, John Cleese, Eric Idle, Terry Jones, Michael Palin and Terry Gilliam, ", "spans": [], "redirections": true, "threshold": -0.1}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(34, 7, 'United_Kingdom'), (156, 11, 'John_Cleese'), (112, 12, 'Monty_Python'), (169, 9, 'Eric_Idle'), (0, 12, 'Monty_Python'), (211, 13, 'Terry_Gilliam'), (140, 14, 'Graham_Chapman'), (180, 11, 'Terry_Jones'), (15, 13, "Monty_Python's_Flying_Circus"), (95, 10, 'The_Comedy')]
+
+ b'{"text": "Creedence Clearwater Revival was an American rock band", "spans": [], "redirections": true, "threshold": -0.1}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(36, 8, 'United_States'), (0, 28, 'Creedence_Clearwater_Revival')]
+
+ b'{"text": "Eminem is the best rapper of all time. MMLP was his best album, Eminem and Dre have produced this album.", "spans": [], "redirections": true, "threshold": -0.1}'
+
+NNProcessing process:
+Processed 1/2 sentences.
+Processed 2/2 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(0, 6, 'Eminem'), (64, 6, 'Eminem'), (75, 3, 'Dr._Dre'), (93, 11, 'Night_Is_the_New_Day'), (48, 14, 'Yell_Fire!')]
+
+ b'{"text": "Pakistan has one of the best teams in cricket. The pakistani squad for ICC Cricket World Cup has Shahid Afridi and Shoaib Akhtar.", "spans": [], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/2 sentences.
+Processed 2/2 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(97, 13, 'Shahid_Afridi'), (71, 21, 'Cricket_World_Cup'), (122, 6, 'Akhtar'), (24, 10, 'Universal_Audio'), (0, 8, 'Pakistan_national_cricket_team')]
+
+ b'{"text": "They performed Kashmir, written by Plant and Page. Page played unusual chords on his Gibson.", "spans": [], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/2 sentences.
+Processed 2/2 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(35, 14, 'Page_and_Plant'), (15, 7, 'Kashmir')]
+
+ b'{"text": "Kashmir is a song by the English rock band Led Zeppelin. Included on their sixth album Physical Graffiti (1975), it was written by Jimmy Page and Robert Plant (with contributions from John Bonham) over a period of three years with lyrics dating to 1973.", "spans": [], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/2 sentences.
+Processed 2/2 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(25, 7, 'England'), (131, 10, 'Jimmy_Page'), (146, 12, 'Robert_Plant'), (43, 12, 'Led_Zeppelin'), (184, 11, 'John_Bonham'), (87, 17, 'Physical_Graffiti'), (0, 7, 'Kashmir')]
+
+ b'{"text": "Federer\\u2019s coach", "spans": [], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(0, 7, 'Roger_Federer')]
+
+ b'{"text": "Obama Castle was built in 1601 in Japan.", "spans": [], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(34, 5, 'Japan')]
+
+ b'{"text": "The New York Times is a popular newspaper.", "spans": [], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(0, 18, 'The_New_York_Times')]
+
+ b'{"text": "KIEV: Separatist rebels have not fulfilled conditions like handingback border posts or laying down their weapons, Ukraine\\u2019s presidentsaid on Monday in a phone call with the leaders of Russia, Germany and France as he pondered whether to extend a ceasefire.The call between President Petro Poroshenko, Russia\\u2019s Vladimir Putin, Germany\\u2019s Chancellor Angela Merkel and France\\u2019s Francois Hollande took place as an expiration deadline neared for Ukraine\\u2019s shaky, unilateral ceasefire.", "spans": [], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(301, 6, 'Russia'), (184, 6, 'Russia'), (326, 7, 'Germany'), (365, 6, 'France'), (192, 7, 'Germany'), (204, 6, 'France'), (114, 7, 'Ukraine'), (440, 7, 'Ukraine'), (0, 4, 'Kiev'), (347, 13, 'Angela_Merkel'), (310, 14, 'Vladimir_Putin'), (383, 8, 'François_Hollande'), (289, 10, 'Petro_Poroshenko'), (6, 10, 'Separatism')]
+
+ b'{"text": "Monty Python\'s Flying Circus is a British surreal sketch comedy series created by and starring the comedy group Monty Python, consisting of Graham Chapman, John Cleese, Eric Idle, Terry Jones, Michael Palin and Terry Gilliam, ", "spans": [], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(34, 7, 'United_Kingdom'), (156, 11, 'John_Cleese'), (112, 12, 'Monty_Python'), (169, 9, 'Eric_Idle'), (0, 12, 'Monty_Python'), (211, 13, 'Terry_Gilliam'), (140, 14, 'Graham_Chapman'), (180, 11, 'Terry_Jones'), (15, 13, "Monty_Python's_Flying_Circus"), (95, 10, 'The_Comedy')]
+
+ b'{"text": "Creedence Clearwater Revival was an American rock band", "spans": [], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/1 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(36, 8, 'United_States'), (0, 28, 'Creedence_Clearwater_Revival')]
+
+ b'{"text": "Eminem is the best rapper of all time. MMLP was his best album, Eminem and Dre have produced this album.", "spans": [], "redirections": true, "threshold": null}'
+
+NNProcessing process:
+Processed 1/2 sentences.
+Processed 2/2 sentences.
+gm_idx_errors = 0
+Response from server.py:
+ [(0, 6, 'Eminem'), (64, 6, 'Eminem'), (75, 3, 'Dr._Dre'), (93, 11, 'Night_Is_the_New_Day'), (48, 14, 'Yell_Fire!')]

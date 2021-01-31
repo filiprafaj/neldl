@@ -47,7 +47,7 @@ To summarize all results you can use:
 ```
 python -m evaluation.summarize_all_experiments --order_by_test_set
 ```
-To evaluate and to print predictions similar to those [here]() you can use a command analogous to:
+To evaluate and to print predictions similar to those [here](https://github.com/filiprafaj/neldl/tree/main/predictions) you can use a command analogous to:
 ```
 python -m evaluation.evaluate --experiment_name base_cased --training_name no_attention --checkpoint_model_num 54
 ```

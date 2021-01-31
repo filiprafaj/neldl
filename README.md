@@ -18,7 +18,6 @@ python
 >>> import nltk
 >>> nltk.download('stopwords')
 >>> nltk.download('punkt')
-
 ```
 - Download our `data` folder [here](https://drive.google.com/file/d/1Gpss0Bjeph1JvEgpA7CMqKl_gRDikFfq/view?usp=sharing) and place the it under `neldl/` (under `data/experiments` there are some of our experiments).
 ---

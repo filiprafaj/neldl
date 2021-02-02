@@ -1,6 +1,6 @@
 # "Named Entity Linking by Deep Learning" source code
 
-The thesis can be found [here](https://drive.google.com/file/d/1bY6zchJr_nJSDMSExQE4JnLSZtpXxibk/view?usp=sharing).
+The thesis can be found [here](https://drive.google.com/file/d/1EBASx-h6Jb6Ru8tXGvqCbqk1hpS_C1W5/view?usp=sharing).
 The code is based on https://github.com/dalab/end2end_neural_el/. [[1]](1)
 ## Set up environment
 - clone the repository, create Python environment (optional) and install the required libraries
